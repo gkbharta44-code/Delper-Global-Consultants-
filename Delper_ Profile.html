@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Delper: Profile</title>
+<style>
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --text: #1d1d1f;
+  --muted: #5f6368;
+  --border: #e0e0e0;
+  --accent: #1a56db;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #1c1c1e;
+    --text: #f2f2f7;
+    --muted: #a1a1a6;
+    --border: #3a3a3c;
+    --accent: #8ab4f8;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1c1c1e;
+  --text: #f2f2f7;
+  --muted: #a1a1a6;
+  --border: #3a3a3c;
+  --accent: #8ab4f8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  font-size: 16px;
+}
+:root {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 18px 40px;
+}
+h1 { font-size: 1.7rem; margin: 0 0 6px; }
+h2 { font-size: 1.15rem; margin: 32px 0 10px; padding-top: 16px; border-top: 1px solid var(--border); }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 20px; margin: 0 0 10px; }
+.status { color: var(--muted); font-size: 0.95rem; }
+.table-wrap { overflow-x: auto; margin: 10px 0 16px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+.note { color: var(--muted); font-size: 0.9rem; }
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 18px 18px calc(24px + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+footer a { color: var(--accent); text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Delper: Profile</h1>
+<p class="status"><strong>Status:</strong> Pre-revenue. Every figure is a projection from management's model. None of the partner relationships has been independently confirmed.</p>
+
+<h2>Entities</h2>
+<ul>
+  <li><strong>Delper Global Consultants:</strong> the operating entity. Confirmed by management; registration still to be verified.</li>
+  <li><strong>Radiant Synage:</strong> an Indian digital signage company contributing IP to the Singapore SPV. Its website figures are unverified; the "8080+" statistics look like placeholders.</li>
+  <li><strong>Delper Singapore SPV:</strong> the holding vehicle. Its legal name still needs confirming.</li>
+</ul>
+
+<h2>What Delper does</h2>
+<p>Delper's main business is a cross-border trade platform for B2B buyers and vendors. It onboards parties through one API, holds buyer funds in escrow, releases them after independent inspection, and sources orders through competitive bidding. The model assumes a 14-day settlement cycle, giving 26 turns a year. The use of High Sea Sales to avoid import duties is a legal risk and needs a customs opinion before any such claim is made.</p>
+<p>Two related businesses are also described:</p>
+<ul>
+  <li><strong>Delper Aegis:</strong> industrial firewall hardware (Delper Guard) with a managed service. The SL-4 security rating is a target, not a certification.</li>
+  <li><strong>Training:</strong> a planned six-month diploma with UVCE. The partnership is not yet confirmed.</li>
+</ul>
+<p>A <strong>CSR plan</strong> would fund village infrastructure from 2% of pretax profit.</p>
+
+<h2>Transaction</h2>
+<ul>
+  <li><strong>Raise:</strong> $4.0M into the Singapore SPV.</li>
+  <li><strong>Valuation:</strong> ₹120.8 Cr (2.5x the stated run rate of ₹48.32 Cr), or about $12.6M at ₹96/$. This is the IP value of Radiant Synage's contribution.</li>
+  <li><strong>Stake:</strong> the proposed investor receives <strong>24.1%</strong> ($4.0M ÷ $16.6M post-money).</li>
+  <li><strong>Repayment stream:</strong> the CapEx repayment equals 24.15% of revenue. The proposed investor receives 75% of it (18.11% of revenue) and Delper receives 25% (6.04%).</li>
+  <li><strong>Proposed investor:</strong> not yet selected.</li>
+</ul>
+
+<h2>Use of funds ($4.0M)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Item</th><th>Amount</th></tr></thead>
+  <tbody>
+    <tr><td>Liquidity reserve</td><td>$1.00M</td></tr>
+    <tr><td>SAP BTP and Signavio middleware</td><td>$0.86M</td></tr>
+    <tr><td>SAP S/4HANA</td><td>$0.39M</td></tr>
+    <tr><td>Partner costs</td><td>$0.40M</td></tr>
+    <tr><td>Office</td><td>$0.20M</td></tr>
+    <tr><td>Technology</td><td>$0.40M</td></tr>
+    <tr><td>SGS webhook integration</td><td>$0.15M</td></tr>
+    <tr><td>Incorporation and licensing</td><td>$0.25M</td></tr>
+    <tr><td>Contingency</td><td>$0.35M</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>$4.00M</strong></td></tr>
+  </tbody>
+</table>
+</div>
+<p class="note">Of this, $2.21M is trading capital and $1.79M is set-up spend.</p>
+
+<h2>Projections (previous model, confirmed)</h2>
+<ul>
+  <li><strong>Year 1:</strong> GMV $39.0M and revenue $9.44M (24.2% of GMV).</li>
+  <li><strong>Year 2 plan:</strong> GMV $204.8M and revenue $49.6M.</li>
+  <li><strong>Reinvestment:</strong> 60% of revenue after 17% company tax.</li>
+  <li><strong>Investor payback:</strong> about 2.3 years on flat Year 1 revenue, and about 1.3 years on the Year 2 plan.</li>
+  <li><strong>Cap:</strong> GMV is capped at 70% of world GDP, which binds from Year 11.</li>
+</ul>
+<p class="note">The projections assume a 24.2% take rate, which is far above typical B2B payment or marketplace fees. Its derivation is not shown.</p>
+
+<h2>Market</h2>
+<ul>
+  <li>The TAM of $176.44T is Year 11 world GDP. Year 1 world GDP is $126.30T.</li>
+  <li>The addressable market is $9.15T.</li>
+  <li>Year 11 GMV of $123.5T is far larger than the addressable market, because GMV counts the same money at each step of a chain. Consumer spend is the more meaningful comparison.</li>
+</ul>
+
+<h2>Aegis</h2>
+<ul>
+  <li><strong>Gross upfront revenue:</strong> $7.25B across three tiers of 1M units each.</li>
+  <li><strong>Recurring revenue:</strong> $102.5B a year at full scale.</li>
+  <li><strong>Compliance pool:</strong> $7.85M confirmed. Only $1.5M is itemised, leaving $6.35M unexplained.</li>
+  <li><strong>Staffing:</strong> a 33,000-position model needs about 159,390 engineers, costing about $36B a year. At ₹96/$, the per-position staffing cost is about $242K, above the $100K annual subscription.</li>
+  <li><strong>Year 1 cash:</strong> the $5.3B figure assumes all units sell in Year 1, despite a 12-month rollout.</li>
+</ul>
+
+<h2>Hubs and team</h2>
+<ul>
+  <li><strong>Hubs:</strong> 243, confirmed by management.</li>
+  <li><strong>Training intake:</strong> the 300-student model assumed three hubs of 100 each, so it needs redesigning for 243 hubs.</li>
+  <li><strong>Management:</strong> no founders, executives, or board members are named in any document. This must be filled before any investment decision.</li>
+</ul>
+
+<h2>Unverified</h2>
+<ul>
+  <li>Proxtera, Tazapay, SGS, UVCE, and the partner banks.</li>
+  <li>Radiant Synage's revenue of ₹48.32 Cr, which supports the valuation.</li>
+  <li>Market statistics quoted in the Aegis document.</li>
+  <li>The company's registration.</li>
+  <li>The tax treatment of the CapEx repayment. Management has not confirmed whether the 17% company tax applies to all pretax profit.</li>
+</ul>
+
+<p class="note">This is not investment advice. Anyone considering the proposed investment should obtain independent financial, legal, and tax advice before committing funds.</p>
+
+</main>
+<footer>
+  <a href="https://gkbharta44-code.github.io/Delper-Global-Trust-Layer/"><u>Delper Global Consultants</u></a>
+</footer>
+</body>
+</html>
